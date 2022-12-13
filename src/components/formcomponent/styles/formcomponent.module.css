@@ -1,0 +1,79 @@
+.formcomponentcontainer {
+    margin: 30vh auto;
+    width: 30%;
+    box-shadow: 4px 4px 40px 14px black;
+}
+
+.titleformcontainer {
+    background-color: rgb(117, 98, 242);
+}
+.titleform {
+    color: rgb(255, 255, 255);
+    padding : 0.4em;
+    font-size: 1.5em;
+    text-align: center;
+}
+.formcontainer {
+    padding: 2em;
+}
+.form {
+    width: 90%;
+    margin: 0 auto;
+}
+.inputscontainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+.selectopt {
+    text-align: center;
+    width: 80%;
+    height: 2.5em;
+    outline: none;
+    border: none;
+    background-color: rgb(93, 77, 193);
+    color: white;
+}
+.option1{
+    background-color: rgb(140, 220, 140);
+}
+.option2{
+    background-color: rgb(191, 98, 98);
+}
+.label {
+    color: rgb(0, 0, 0);
+    font-size: 1.4em;
+    width: 20%;
+}
+.inputs {
+    width: 80%;
+    border: none;
+    padding: 5px;
+    outline: none;
+    border-bottom: 2px solid #000;
+}
+.textarea{
+    border: 2px solid #000;
+    width: 100%;
+    padding: .5em;
+    outline: none;
+    resize: none;
+}
+.buttoncontainer {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    gap: 20px ;
+
+    transition: 0.2s linear ;
+}
+.buttoncontainer:hover {
+    transform: scale(1.025);
+}
+.buttonsend  {
+    border: none;
+    padding: 1em;
+    color: rgb(255, 255, 255);
+    background-color: rgb(67, 50, 171);
+    font-size: 0.9em;
+}

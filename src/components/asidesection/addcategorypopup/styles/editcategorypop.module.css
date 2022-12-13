@@ -1,0 +1,54 @@
+.editcategory{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 20%;
+    height: 18vh;
+    box-shadow: 4px 1px 20px 4px #000;
+}
+.buttoncancelcontainer {
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(84, 63, 222);
+}
+.buttoncancel {
+    padding: 0.4em 1.5em;
+    border: none;
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+.edittitlecontainer {
+    padding: 0.4em;
+    text-align: center;
+    font-size: 15px;
+}
+.edittile {
+    font-size: 1.2em;
+}
+.editinputcontainer {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+.editinput {
+    border: 2px solid #000;
+    outline: none;
+    font-size: 15px;
+}
+.addeditbuttoncontainer {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+}
+.addeditbutton {
+    border: none;
+    background-color: rgb(22, 137, 22);
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    padding: 0.4em 1em;
+}

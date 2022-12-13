@@ -1,0 +1,18 @@
+.searchcontainer{
+    width: 100%;
+    font-size: 10px;
+}
+.inputsearch {
+    border: 2px solid rgb(187, 182, 182);
+    outline: none;
+    padding: 5px;
+    width: 90%;
+    font-size: 1em;
+}
+.buttoniconsearch{
+    border: 2px solid rgb(84, 60, 241);
+    background-color: rgb(84, 60, 241);
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    font-size: 1em;
+}

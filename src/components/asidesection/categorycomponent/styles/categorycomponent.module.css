@@ -1,0 +1,39 @@
+.categorycomponentcontainer{
+    position: relative;
+    box-shadow: 0 0 10px 1px #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.maindatacontainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.titlecategorycontainer{
+    width: 90%;
+    text-align: center;
+}
+.titlecategory{
+    text-align: center;
+    font-size : 1.2em;
+}
+.categoryoptioncontainer{
+
+    width: 10%;
+    background-color: green;
+}
+.categoryoption{
+    border: none;
+    background-color: rgb(87, 67, 217);
+    color: #fff;
+    padding: 0.4em 1em;
+}
+.optioncategories{
+    position: absolute;
+    left: 14em;
+    display: flex;
+    gap: 12px;
+}

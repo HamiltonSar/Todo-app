@@ -1,0 +1,19 @@
+.errorcolormessage{
+    padding: 1.5em;
+    text-align: center;
+    background-color: rgb(230, 25, 25);
+}
+.validcolormessage {
+    padding: 1.5em;
+    text-align: center;
+    background-color: rgb(28, 130, 28);
+}
+.messagestext {
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+}
+.iconmessage {
+    margin-left: 1.7em;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+}
