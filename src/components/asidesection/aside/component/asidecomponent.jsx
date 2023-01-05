@@ -3,7 +3,7 @@ import styles from "../styles/asidecomponent.module.css";
 import SearchAside from '../../searchaside/component/searchaside';
 import AddCategory from '../../addcategory/component/addcategory';
 import { CategoryContext } from '../../../contextapis/categorydatacontext/categorydatacontext';
-
+import CategoryComponent from '../../categorycomponent/component/categorycomponent';
 
 
 function AsideComponent ()  {
@@ -20,8 +20,13 @@ function AsideComponent ()  {
                 <SearchAside />
               </div>
 
-              <div className= { styles.textdefaultcontainer } >
-                { categoryState.addcategorycomponent }
+              <div className={styles.textdefaultcontainer}>
+                {
+                  categoryState.map(( task )=> (
+                    <CategoryComponent key={task.id} adddatacategory={task.text}  />
+                  ))
+                }
+                 
               </div>
 
               <div>

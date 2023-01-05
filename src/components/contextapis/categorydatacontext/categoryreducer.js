@@ -11,13 +11,10 @@ const categoryreducer = ( state , action ) => {
     switch (type) {
 
         case categorytypes.AddCastegoryComponent:  //Modify red button
-            return { ...state , addcategorycomponent :  <CategoryComponent/>  }; 
-
-        case categorytypes.DeleteCategoryComponent: //Delete green button
-            return { ...state , addcategorycomponent : null }; 
+            return [...state , { text : payload } ]; 
 
         case categorytypes.AddModifyCategoryComponent: 
-            return { ...state  , addmodifydata : payload};
+            return  [ { state.filter() } ] ;
         
         default:
             return state;

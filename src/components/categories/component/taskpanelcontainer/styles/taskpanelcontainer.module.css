@@ -1,0 +1,17 @@
+.taskpanelcontainer {
+    width: 100%;
+}
+.backgroundtask {
+    background-image : url("./../../../../../assets/gallery/taskbackgrounds/defaulttaskbackground.jpg");
+    background-repeat: no-repeat;
+    background-position: center center ;
+    background-size: cover;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: flex-end;
+}
+.tasktitle {
+    color: #fff;
+    margin-left: 1em;
+}

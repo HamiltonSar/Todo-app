@@ -1,0 +1,52 @@
+.headercontainer {
+    background-color: rgb(70, 48, 215);
+    width: 100%;
+    height: 100vh;
+}
+.headerlogocontainer {
+    display: flex;
+    justify-content: center;    
+}
+.headerlogo {
+    width: 10em;
+}
+
+.navcontainer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.listheader {
+    list-style: none;
+    text-align: center;
+}
+
+.linkslist {
+    text-decoration: none;
+    display: block;
+    padding: 1.4em 0;
+    width: 100%;
+    color: #fff;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+}
+.linkslist > i {
+    margin-left: 1em;
+}
+.textmodecontainer {
+    display: flex;
+    flex-direction: column;
+}
+.darkmodeicon , .lightmodeicon , .buttonlogin {
+    color: white;
+    border: none;
+    font-size: 1em;
+    padding: 1.5em;
+    background-color: transparent;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+}
+.darkmodeicon:hover , .lightmodeicon:hover , .buttonlogin:hover , .linkslist:hover  {
+    background-color: #fff;
+    color: rgb(70, 48, 215);
+}

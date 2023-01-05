@@ -7,11 +7,15 @@ import { CategoryContext } from '../../../../../../contextapis/categorydataconte
 
 
 function DeleteCategory  () {
+
   const { DeleteCategoryComponent } = useContext( CategoryContext );
+
   return (
-    <div>
-        <button onClick={ ()=> DeleteCategoryComponent() } className= {styles.categorydeletebutton} >Delete <i> { iconsglobal.deleteTrashIcon } </i> </button>
+
+    <div className = {styles.categoryoptioncontainer} >
+        <button onClick={ ()=> DeleteCategoryComponent() } className= {styles.categorydeletebutton} >Delete <i className = {styles.deleteicon} > { iconsglobal.deleteTrashIcon } </i> </button>
     </div>
+    
   )
 }
 

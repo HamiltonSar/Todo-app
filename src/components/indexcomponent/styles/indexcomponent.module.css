@@ -1,3 +1,12 @@
+.indexcore {
+    display: flex;
+}
 .asidecore {
     width: 20%;
+}
+.componentscore {
+    width: 68%;
+}
+.headercore {
+    width: 12%;
 }

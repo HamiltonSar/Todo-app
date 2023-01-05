@@ -10,7 +10,7 @@ function EditCategory  () {
 
     const {  ClosePopUp } = useContext( PopUpData )
     const { AddModifiedCategoryComponent , setIndividualCategory } = useContext( CategoryContext );
-    const editRef = useRef( );
+    const editRef = useRef();
 
 
   return (

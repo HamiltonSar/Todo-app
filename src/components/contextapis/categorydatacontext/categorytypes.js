@@ -2,6 +2,7 @@ const categorytypes = {
     AddCastegoryComponent : 'AddCastegoryComponent',
     DeleteCategoryComponent : 'DeleteCategoryComponent',
     AddModifyCategoryComponent : "AddModifyCategoryComponent",
+    ShowMessageAlarm : 'ShowMessageAlarm'
 }
 
 

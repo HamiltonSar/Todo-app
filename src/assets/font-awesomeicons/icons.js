@@ -1,4 +1,4 @@
-import { faCheck, faCircleExclamation, faEllipsisVertical, faMagnifyingGlass, faPlus, faTrash, faWindowRestore, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faCheck, faCircleExclamation, faEllipsisVertical, faMagnifyingGlass, faPlus, faTrash, faWindowRestore, faXmark , faMoon , faSun , faRightToBracket , faRightFromBracket ,  faUser ,  faGear , faBullseye } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const searchIcon = < FontAwesomeIcon icon={ faMagnifyingGlass } />;
@@ -9,6 +9,16 @@ const plusIcon = <FontAwesomeIcon icon={faPlus} />;
 const cancelIcon = <FontAwesomeIcon icon={faXmark} />;
 const alertIcon = <FontAwesomeIcon icon={faCircleExclamation} />
 const checkIcon = <FontAwesomeIcon icon={ faCheck } />
+const darkModeIcon = <FontAwesomeIcon icon={ faMoon } />
+const lightModeIcon = <FontAwesomeIcon icon={ faSun } />
+const loginIcon = <FontAwesomeIcon icon={ faRightToBracket } />
+const logoutIcon = <FontAwesomeIcon icon={ faRightFromBracket } />
+const profileIcon = <FontAwesomeIcon icon={ faUser } />
+const settingIcon = <FontAwesomeIcon icon={ faGear } />
+const targetIcon = <FontAwesomeIcon icon={ faBullseye } />
+
+
+
 
 
 const iconsglobal = {
@@ -19,7 +29,15 @@ const iconsglobal = {
     plusIcon,
     cancelIcon,
     alertIcon,
-    checkIcon
+    checkIcon,
+    darkModeIcon,
+    lightModeIcon,
+    loginIcon , 
+    logoutIcon,
+    profileIcon,
+    settingIcon,
+    targetIcon, 
+
 }
 
 export default iconsglobal;

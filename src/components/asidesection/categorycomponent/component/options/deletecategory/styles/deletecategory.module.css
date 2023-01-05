@@ -1,6 +1,13 @@
+.categoryoptioncontainer {
+    height: 100%;
+}
 .categorydeletebutton{
-    background-color: rgb(39, 140, 39);
+    background-color: rgb(11, 166, 11);
     color: white;
     border: none;
+    display: flex;
     padding: 0.4em;
+}
+.deleteicon {
+    margin-left: 0.4em;
 }

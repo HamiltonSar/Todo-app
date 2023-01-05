@@ -1,29 +1,34 @@
 .categorycomponentcontainer{
-    position: relative;
-    box-shadow: 0 0 10px 1px #000;
+    margin: 1em 0;
+    padding: 0.4em;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid rgb(56, 56, 56);
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.4s;
 }
-.maindatacontainer {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+.categorycomponentcontainer:hover{
+    transform: translateX(0.4em) scale(1.014);
+    background-color: rgb(231, 228, 228);
 }
 .titlecategorycontainer{
     width: 90%;
     text-align: center;
 }
 .titlecategory{
+    display: flex;
+    justify-content: space-between;
     text-align: center;
     font-size : 1.2em;
 }
+.optionsbarbutton{
+    border: none;
+    padding: 0.5em;
+    background-color: transparent;
+    position: relative;
+}
 .categoryoptioncontainer{
-
     width: 10%;
-    background-color: green;
 }
 .categoryoption{
     border: none;
@@ -32,8 +37,10 @@
     padding: 0.4em 1em;
 }
 .optioncategories{
-    position: absolute;
-    left: 14em;
     display: flex;
-    gap: 12px;
+    gap: 5px;
+    position: absolute;
+    left: 8em;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }

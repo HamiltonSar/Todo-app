@@ -4,25 +4,36 @@ import categorytypes from './categorytypes';
 import messagecollection from '../../asidesection/addcategorypopup/alertmessages/messagecollection';
 import { Category_data , Modifying_Data } from './eventfunction';
 import { PopUpData } from '../popupcontext/popcontext';
+import ToolargeMessage from '../../asidesection/addcategorypopup/alertmessages/toolargemessage';
+import TooShortMessage from '../../asidesection/addcategorypopup/alertmessages/tooshortmessage';
+import EmptyMessage from '../../asidesection/addcategorypopup/alertmessages/emptymessage';
+import ValidMessage from '../../asidesection/addcategorypopup/alertmessages/validmessage';
+import faker from "@faker-js/faker";
 
 export const CategoryContext = createContext();
 
-const asidecategory = {
-    adddatacategory : null ,                    //To add data from input to the new component added into aside
-    addcategorycomponent : null,
-
-    message : null ,                            // Message validation popup,
-    
-    adddmodifiedcomponent : null,               //To delete aside category component
-    addmodifydata : null ,                         //To modify data in aside  
-}
 
 
 
+
+const asidecategory = [{
+    id : faker.random.uuid(),
+    text : null , 
+    textReplaced : null , 
+    message : null
+}];
 
 
 function CategoryDataContext ( props )  {
-    const [categoryState, dispatch] = useReducer( categoryreducer , asidecategory );
+
+    const messagecollection = {
+        tooLarge : < ToolargeMessage /> , 
+        tooShort : < TooShortMessage /> , 
+        empty : < EmptyMessage /> , 
+        validmessage : <ValidMessage />
+    }
+
+    const [ categoryState, dispatch ] = useReducer( categoryreducer , asidecategory );
     const { ClosePopUp } = useContext( PopUpData );
     
     const AddCategoryComponent = ( categorydata ) => {
@@ -37,9 +48,9 @@ function CategoryDataContext ( props )  {
     }
 
     const AddModifiedCategoryComponent = (datamodified) => {
-        Modifying_Data(datamodified , categoryState);
         dispatch( {type : categorytypes.AddModifyCategoryComponent , payload : datamodified } )
-        ClosePopUp()
+        Modifying_Data(datamodified , categoryState);
+        ClosePopUp();
     }
 
 

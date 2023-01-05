@@ -9,9 +9,9 @@ import { CategoryContext } from '../../../contextapis/categorydatacontext/catego
 function AddCategoryPopup ()  {
     
     
-    const categoryRef = useRef();    
     const { AddCategoryComponent , categoryState } = useContext( CategoryContext );
     const { ClosePopUp  } = useContext( PopUpData );
+    const categoryRef = useRef();    
 
   return (
 
@@ -35,7 +35,7 @@ function AddCategoryPopup ()  {
         </div>
         
         <div>
-            {categoryState.message}
+            { categoryState.message }
         </div>
 
     </div>

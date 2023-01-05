@@ -9,7 +9,7 @@ function SearchAside  ()  {
   return (
     <div className= {styles.searchcontainer} >
         <input className=  {styles.inputsearch} type= "search" placeholder='Search for...'/>
-        <button className= {styles.buttoniconsearch} ><i> {iconsglobal.searchIcon} </i></button>
+        <button className= {styles.buttoniconsearch} ><i> { iconsglobal.searchIcon } </i></button>
     </div>
   )
 }

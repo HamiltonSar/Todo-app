@@ -11,7 +11,9 @@ export const PopUpData = createContext();
 
 function PopUpContext (props) {
   
-  const popupState = {addcategorypopup : null};
+  const popupState = {addcategorypopup : null };
+
+
 
   const ShowPopUp = (component) => {
     dispatch( { type : TYPES.SHOW_POPUP , payload : component } )
